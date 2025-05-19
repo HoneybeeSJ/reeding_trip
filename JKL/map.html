@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_edcbd9357e6e7b2c40443766446f47d7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style="
+    position: fixed; 
+    bottom: 50px; left: 50px; width: 250px; height: auto; 
+    background-color: white; 
+    border:2px solid grey; z-index:9999; font-size:14px;
+    padding: 10px;
+">
+    <b>범례</b><br>
+    <i style="background:red; width:10px; height:10px; float:left; margin-right:8px; display:inline-block;"></i> 1위: 잠실<br><i style="background:blue; width:10px; height:10px; float:left; margin-right:8px; display:inline-block;"></i> 2위: 강남<br><i style="background:green; width:10px; height:10px; float:left; margin-right:8px; display:inline-block;"></i> 3위: 고속터미널<br><i style="background:purple; width:10px; height:10px; float:left; margin-right:8px; display:inline-block;"></i> 4위: 홍대입구<br><i style="background:indigo; width:10px; height:10px; float:left; margin-right:8px; display:inline-block;"></i> 5위: 사당<br>
+</div>
+    
+            <div class="folium-map" id="map_edcbd9357e6e7b2c40443766446f47d7" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_edcbd9357e6e7b2c40443766446f47d7 = L.map(
+                "map_edcbd9357e6e7b2c40443766446f47d7",
+                {
+                    center: [37.5050827, 127.0049777],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_48ed2ee765cb2f500f91f49f9ee066d9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_48ed2ee765cb2f500f91f49f9ee066d9.addTo(map_edcbd9357e6e7b2c40443766446f47d7);
+        
+    
+            var circle_marker_5df864ce89437fa176378d6b5f79bd56 = L.circleMarker(
+                [37.514714, 127.0993924],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50.0, "stroke": true, "weight": 3}
+            ).addTo(map_edcbd9357e6e7b2c40443766446f47d7);
+        
+    
+        var popup_28d73fa1240a107b00a5c9eaf7836297 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dcf6f3136e718d6df59b6ff41dc7e1d7 = $(`<div id="html_dcf6f3136e718d6df59b6ff41dc7e1d7" style="width: 100.0%; height: 100.0%;">잠실<br>유동인구: 370,155,985</div>`)[0];
+                popup_28d73fa1240a107b00a5c9eaf7836297.setContent(html_dcf6f3136e718d6df59b6ff41dc7e1d7);
+            
+        
+
+        circle_marker_5df864ce89437fa176378d6b5f79bd56.bindPopup(popup_28d73fa1240a107b00a5c9eaf7836297)
+        ;
+
+        
+    
+    
+            circle_marker_5df864ce89437fa176378d6b5f79bd56.bindTooltip(
+                `<div>
+                     1위: 잠실
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c6fbb73db99a8bc5c02b598cfcb006a = L.circleMarker(
+                [37.4999282, 127.0263182],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 33.78373751748238, "stroke": true, "weight": 3}
+            ).addTo(map_edcbd9357e6e7b2c40443766446f47d7);
+        
+    
+        var popup_87c8285fdb2a50ebc8fc3668e1fe6278 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a3f1eec407843a719cc758e26030610 = $(`<div id="html_0a3f1eec407843a719cc758e26030610" style="width: 100.0%; height: 100.0%;">강남<br>유동인구: 332,185,330</div>`)[0];
+                popup_87c8285fdb2a50ebc8fc3668e1fe6278.setContent(html_0a3f1eec407843a719cc758e26030610);
+            
+        
+
+        circle_marker_7c6fbb73db99a8bc5c02b598cfcb006a.bindPopup(popup_87c8285fdb2a50ebc8fc3668e1fe6278)
+        ;
+
+        
+    
+    
+            circle_marker_7c6fbb73db99a8bc5c02b598cfcb006a.bindTooltip(
+                `<div>
+                     2위: 강남
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4750eeea625fea71233d7a0479b828fd = L.circleMarker(
+                [37.5050827, 127.0049777],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 33.04814688657639, "stroke": true, "weight": 3}
+            ).addTo(map_edcbd9357e6e7b2c40443766446f47d7);
+        
+    
+        var popup_3f289b6f5e4ca9c466d7dd79eebcdb1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1b427223925e408e3268e73864d48b0 = $(`<div id="html_c1b427223925e408e3268e73864d48b0" style="width: 100.0%; height: 100.0%;">고속터미널<br>유동인구: 330,462,932</div>`)[0];
+                popup_3f289b6f5e4ca9c466d7dd79eebcdb1d.setContent(html_c1b427223925e408e3268e73864d48b0);
+            
+        
+
+        circle_marker_4750eeea625fea71233d7a0479b828fd.bindPopup(popup_3f289b6f5e4ca9c466d7dd79eebcdb1d)
+        ;
+
+        
+    
+    
+            circle_marker_4750eeea625fea71233d7a0479b828fd.bindTooltip(
+                `<div>
+                     3위: 고속터미널
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd833c6c55eedd1f876a5e6d03a55362 = L.circleMarker(
+                [37.5575596, 126.924839],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.137841310420338, "stroke": true, "weight": 3}
+            ).addTo(map_edcbd9357e6e7b2c40443766446f47d7);
+        
+    
+        var popup_a1f6b019947fb868a1df85ad12a1e6ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ecd44b3c61f676fdbdb1e280d594408 = $(`<div id="html_3ecd44b3c61f676fdbdb1e280d594408" style="width: 100.0%; height: 100.0%;">홍대입구<br>유동인구: 276,818,061</div>`)[0];
+                popup_a1f6b019947fb868a1df85ad12a1e6ee.setContent(html_3ecd44b3c61f676fdbdb1e280d594408);
+            
+        
+
+        circle_marker_fd833c6c55eedd1f876a5e6d03a55362.bindPopup(popup_a1f6b019947fb868a1df85ad12a1e6ee)
+        ;
+
+        
+    
+    
+            circle_marker_fd833c6c55eedd1f876a5e6d03a55362.bindTooltip(
+                `<div>
+                     4위: 홍대입구
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8a2f3b36b8ebbe240a02eda00bd475bb = L.circleMarker(
+                [37.4765834, 126.9827547],
+                {"bubblingMouseEvents": true, "color": "indigo", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "indigo", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.0, "stroke": true, "weight": 3}
+            ).addTo(map_edcbd9357e6e7b2c40443766446f47d7);
+        
+    
+        var popup_c54c7f2075d0be0635ece26932d359d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2be21afca82c9a341a676ff37cbd629b = $(`<div id="html_2be21afca82c9a341a676ff37cbd629b" style="width: 100.0%; height: 100.0%;">사당<br>유동인구: 264,787,718</div>`)[0];
+                popup_c54c7f2075d0be0635ece26932d359d2.setContent(html_2be21afca82c9a341a676ff37cbd629b);
+            
+        
+
+        circle_marker_8a2f3b36b8ebbe240a02eda00bd475bb.bindPopup(popup_c54c7f2075d0be0635ece26932d359d2)
+        ;
+
+        
+    
+    
+            circle_marker_8a2f3b36b8ebbe240a02eda00bd475bb.bindTooltip(
+                `<div>
+                     5위: 사당
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
