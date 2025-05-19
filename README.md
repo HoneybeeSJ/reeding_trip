@@ -1,5 +1,11 @@
 # T-래블 - 수도권 대중교통 기반 AI 맞춤형 여행 서비스
 
+-------
+
+### 발표자료 링크(Canva) : [https://www.canva.com/design/DAGZtux51-g/YsVmBRaFMX0qbi-JUjBIDw/view?utm\_content=DAGZtux51-g\&utm\_campaign=designshare\&utm\_medium=link2\&utm\_source=uniquelinks\&utlId=h1273048c6e](https://www.canva.com/design/DAGZtux51-g/YsVmBRaFMX0qbi-JUjBIDw/view?utm_content=DAGZtux51-g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1273048c6e)
+
+-------
+
 ## 📌 **1️⃣ 프로젝트 개요**
 
 ### 🚀 **프로젝트 소개**
