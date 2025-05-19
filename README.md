@@ -33,8 +33,8 @@
 
 ## 🛠️ **2️⃣ 팀 역할 및 협업 구조**
 
-[김지민](https://github.com/sokcho-kim) : 팀원
 [이승재](https://github.com/HoneybeeSJ) : 팀장
+[김지민](https://github.com/sokcho-kim) : 팀원
 [이진규](https://github.com/OnyX0000) : 팀원
 
 ---
