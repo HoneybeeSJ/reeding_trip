@@ -39,9 +39,9 @@
 
 ## 🛠️ **2️⃣ 팀 역할 및 협업 구조**
 
-[이승재](https://github.com/HoneybeeSJ) : 팀장
-[김지민](https://github.com/sokcho-kim) : 팀원
-[이진규](https://github.com/OnyX0000) : 팀원
+팀장 : [이승재](https://github.com/HoneybeeSJ) : 앱 리뷰 데이터 분석 및 시각화 (워드 클라우드)
+팀원 : [김지민](https://github.com/sokcho-kim) : 유튜브 댓글 & 앱 리뷰 데이터 분석 및 시각화 (워드 클라우드)
+팀원 : [이진규](https://github.com/OnyX0000) : 서울시 대중교통 이용 데이터, 관광객 데이터 분석 및 시각화 
 
 ---
 
